@@ -1,0 +1,9 @@
+Read ch. 6 for exam; touch on ch. 7
+EER diagrams are in chapter 4 and are on test
+draw EER diagram, implement it, create table, populate it
+Things below a thing are inheritances of the thing
+
+Strategy for reading this kind of book:
+    read in short blocks of time
+    read paragraph, go back and underline sentences that summarize it best
+    after something like half an hour, take a serious break

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week 3</title>
+    </head>
+    <body>
+        <form action="action.php" method="post">
+            <fieldset>
+                <legend>Action from tutorial</legend>
+                <p>Your name: <input type="text" name="name" /></p>
+                <p>Your age: <input type="text" name="age" /></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Other form Elements</legend>
+                <p>Your school name: <input type="text" name="school" /></p>
+                <p>Your current student year:</p>
+                <input type = "radio" name = "grade" value = "freshman"> Freshman<br>
+                <input type = "radio" name = "grade" value = "sophomore"> Sophomore<br>
+                <input type = "radio" name = "grade" value = "junior"> Junior<br>
+                <input type = "radio" name = "grade" value = "senior"> Senior<br>
+                <p>What shoes do you own?</p>
+                <input type="checkbox" name="shoes[]" value="Sneakers" checked="checked"> Sneakers<br>
+                <input type="checkbox" name="shoes[]" value="Boots"> Boots<br>
+                <input type="checkbox" name="shoes[]" value="Sandals"> Sandals<br>
+                <p>What gender are you?</p>
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="stick">Stick Figure</option>
+                    <option value="cat">Cat</option>
+                </select><br>
+                <p><input type="submit" value="Submit Data for Review"></p>
+            </fieldset>
+        </form>
+    </body>
+</html>

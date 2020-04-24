@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        input[type=submit]{
+            width: 20em;
+            height: 4em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: none;
+            background-color: darkslategray;
+            color: whitesmoke;
+            font-weight: bolder;
+        }
+    </style>
+    <title>Calculator</title>
+    <body>
+        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: darkslategrey; font-weight: lighter">Calculator</h1>
+        <h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: darkslategrey; font-weight: lighter">For all your mathematical needs.</h4>
+        <form action = "calculator_action.php" method = "post" target = "_blank">
+            <fieldset>
+                <legend style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: darkslategrey; font-weight: lighter">Calculator:</legend>
+                <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: darkslategrey; font-weight: lighter">First number:<br></p>
+                <input type = "text" name = "firstDigit"><br>
+                <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: darkslategrey; font-weight: lighter">Second number:<br></p>
+                <input type = "text" name = "secondDigit"><br>
+                <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: darkslategrey; font-weight: lighter">Select operand:<br></p>
+                <input type = "radio" name = "operand" value = "add"> Add<br>
+                <input type = "radio" name = "operand" value = "subtract"> Subtract<br>
+                <input type = "radio" name = "operand" value = "multiply"> Multiply<br>
+                <input type = "radio" name = "operand" value = "divide"> Divide<br>
+            </fieldset>
+            <input type = "submit" value = "Enter">
+        </form>
+    </body>
+</html>

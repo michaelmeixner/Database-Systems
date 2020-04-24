@@ -1,0 +1,18 @@
+browser sees client's script and requests page from server
+php runs on server afer request is made. output of the php is the response sent to the client
+client sees html output from php. client never sees php
+web browser never sees php either
+hence, when accessing database with credentials, put credentials in php so the client cannot see them
+make any process in the database in php so that no data is compromised
+
+need html so the web browser knows how to render page
+html file can only contain html or client-side scripting
+php file can contain php and anything html files can contain
+server will just add html from php file into response it sends back to client
+
+forms:
+    the form tag should encompass everything on the form
+    when a form is submitted, a request is sent to the server
+
+hardware side of databases:
+    

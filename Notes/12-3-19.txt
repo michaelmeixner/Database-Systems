@@ -1,0 +1,22 @@
+stored procedures and functions:
+    a transaction is a set of procedures to be done on a database
+    ensures concurrency and no dirty reads
+
+    transactions: procedures
+    exception handling with try/catch: procedures
+    call from select: functions
+    DML (data manipulation language)(insert, update, delete, etc.): procedures (functions can only use select statement)
+    return: functions always return, procedures *may* return
+
+    procedures can call functions, but functions can't call procedures
+    functions are meant to be simplistic
+
+
+function to return students with less than 3 credit hours:
+
+use `COMPANEIGH`;
+drop function if exists `GetStudent`;
+
+DELIMITER $$
+use `COMPANEIGH`$$
+create function `GetStudent`()

@@ -1,0 +1,39 @@
+Still on ch. 5
+We always envision a relation as a table
+    attributes are first row of data - headers
+    tuples are the rows of data
+
+A state is the state of the database at any moment in time
+    Once db is in valid state it's good to go
+2 things we can do with db
+    query:
+        literally saying i have a question i want db to answer
+        making statements out of boolean algebra to get an answer from the db
+
+    modify:
+        we can modify db by
+            inserting new data
+                adds a tuple (row of data) to a relation
+            deleting existing data
+                removes a tuple from a relation
+            modifying data (called updating in MySQL)
+                changing data in tuple, adding data to existing tuple, removing data from existing tuple
+
+keep problems from occurring when modifying db with following methods
+    transaction processing
+        if we're going to do something, save the db state and try what you're about to do
+            if bad things happen, undo what you just did
+    cascade
+        go ahead and do thing, and if it breaks, follow these rules
+        might lose data this way
+        a couple options when cascading
+            delete tuple in which invalid data was found (can lose data this way)
+            update invalid data field in that tuple with a null or default value
+
+We do all these things in SQL (structured query language)
+    multiple parts to this language
+        DDL - data definition language
+            builds relations
+        DML - data manipulation language (what most people refer to when they say SQL)
+            insert, update, delete, query
+        

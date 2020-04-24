@@ -1,0 +1,8 @@
+For final:
+    NO XML
+    SQL
+        including joins, triggers, and procedures
+    up to third normal form
+Two sheets of paper for notes
+
+normal select statement is the same as an inner join

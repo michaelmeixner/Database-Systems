@@ -1,0 +1,3 @@
+relationships are one-way but can integrate other entities
+double-lined entity is a weak entity
+double-lined relationship is an identifying relationship

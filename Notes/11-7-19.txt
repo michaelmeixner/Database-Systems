@@ -1,0 +1,11 @@
+On exam:
+    SQL
+    Views
+    PHP - using to get stuff from database
+
+ODBC - open database connectivity
+    given to us by microsoft
+JDBC - java database connectivity
+    wrote a set of standards for drivers to meet for database connectivity
+    classified as a level 1-4 for how many standards a driver met
+    level 4 driver cost approx $15,000

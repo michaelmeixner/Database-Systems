@@ -1,0 +1,10 @@
+A relation can be an entity or a relationship in a database
+    a relation is made up of attributes
+        attributes are characteristics
+            attributes must be atomic - cannot be subdivided
+            "luckily", what makes something atomic is up to you
+A foreign key is a key in a different relation
+a domain is a set of valid values for an attribute
+Tuple
+    a tuple is a record within a relation (relation = group of attributes)
+    all tuples have to be unique

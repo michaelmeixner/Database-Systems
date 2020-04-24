@@ -1,0 +1,36 @@
+Databases are servers that provide data (recap)
+    serves just one application or every application
+    stuff on databases gets icky and complicated when it's dealing with multiple applications
+
+"dirty read" = reading data while it's in the process of being changed
+fix by limiting changes to one person at a time, but this is really slow
+
+"record locking" - only one accessor to a specific record at a time
+
+a transaction is a set of operations being performed on the database
+    can make your block of instructions as big as you want/need
+can have multiple users doing read transactions on the same pieces of data because there won't be any dirty reads - no one is writing
+lock it down as soon as writing begins
+you can write really complex transactions because there are no limits to length/size
+
+"rollback" - when the transaction fails, it undoes everything it did so that it looks like nothing happened
+
+lots of databases store a transaction temporarily and test it, and if it fails don't implement it - no rollback necessary
+make a transaction log to keep track of where a transacion was and if the database goes down, it can pick up where it left off
+
+if the transaction doesn't fail, it goes through to the database - "commit" the changes
+MySQL lives in a state of autocommit - commits queries immediately
+other transactions need to be committed manually
+
+how do you create a transaction?
+    "start transaction"
+how do you end a transaction?
+    "commit"
+
+only time you need to use transaction terminology is when your doing multiple things to the same thing
+
+ACID
+    atomic - all transactions have to be atomic (form a cohesive whole)
+    consistent - transactions have to do the same thing every time
+    independent
+    durable

@@ -1,0 +1,18 @@
+Unstructured data:
+    data that differs in quality
+        different attributes, etc.
+XML - extensible markup language 
+tags in html don't tell us anything about the data they're formatting
+tags in xml do - this means we can make our own tags
+    files much bigger because they are text and not binary
+relational databases give you information as an xml file
+xml has additional rules that html doesn't follow:
+    xml document has to be well-formed
+        root element
+        every open tag must be closed
+        must be properly nested
+        xHTML adopted this well-formed structure for html
+    has to be valid
+        means that the document is well-formed and complies with the DTD or schema
+        #PCDATA - parsed-character data - type of schema
+    

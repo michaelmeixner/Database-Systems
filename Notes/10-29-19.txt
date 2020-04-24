@@ -1,0 +1,5 @@
+OODB:
+    object oriented databases
+    almost a programming equivalent of unicorns
+    promised to us since the 90's, but still don't really exist
+ORM - Object relational mapping

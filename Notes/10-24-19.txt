@@ -1,0 +1,3 @@
+views:
+    act like tables, but don't contain data
+    

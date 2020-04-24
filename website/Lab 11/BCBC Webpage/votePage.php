@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BCBC Nominations</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            /* Style the body */
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+            }
+
+            /* Header/logo Title */
+            .header {
+                padding: 3px;
+                text-align: center;
+                background: #FF9593;
+                color: white;
+            }
+
+            /* Resize BCBC logo */
+            img.resize {
+                max-width: 70%;
+                max-height: 70%;
+            }
+
+            /* Increase the font size of the heading */
+            .header h1 {
+                font-size: 40px;
+            }
+
+            /* Style the top navigation bar */
+            .navbar {
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            /* Style the navigation bar links */
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+
+            /* Right-aligned link */
+            .navbar a.right {
+                float: right;
+            }
+
+            /* Change color on hover */
+            .navbar a:hover {
+                background-color: #F5F5F5;
+                color: black;
+            }
+
+            /* Column container */
+            .row {  
+                display: -ms-flexbox; /* IE10 */
+                display: flex;
+                -ms-flex-wrap: wrap; /* IE10 */
+                flex-wrap: wrap;
+            }
+
+            /* Create two unequal columns that sits next to each other */
+            /* Sidebar/left column */
+            .side {
+                -ms-flex: 30%; /* IE10 */
+                flex: 30%;
+                background-color: #aaa;
+                padding: 40px;
+                padding-top: 200px;
+                padding-bottom: 200px;
+                text-align: center;
+            }
+
+            /* Main column */
+            .main {   
+                -ms-flex: 70%; /* IE10 */
+                flex: 70%;
+                background-color: white;
+                padding: 20px;
+            }
+
+            /* Fake image, just for this example */
+            .fakeimg {
+                background-color: #aaa;
+                width: 100%;
+                padding: 20px;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 20px;
+                text-align: center;
+                background: #333;
+            }
+
+            /* Table in footer */
+            th {
+               font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+               font-weight: 300; 
+            }
+            tr {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 200;
+            }
+
+            /* Text input style */
+            input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            /* Form submission button style */
+            input[type=submit] {
+                width: 100%;
+                background-color: #aaa;
+                font-size: small;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type=submit]:hover {
+                background-color: #616161;
+            }
+
+            /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 700px) {
+                .row {   
+                    flex-direction: column;
+                }
+            }
+
+            /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+            @media screen and (max-width: 400px) {
+                .navbar a {
+                    float: none;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+        </div>
+        <div class="navbar">
+            <a href="https://192.168.56.101/CSCI3100/Lab%2011/BCBC%20Webpage/bcbcHome.html">Return to Home</a>
+            <a href="https://192.168.56.101/CSCI3100/Lab%2011/BCBC%20Webpage/resultPage.html" class="right">Results</a>
+        </div>
+        <div class="row">
+            <div class="side">
+            <img class="resize" src="BCBC LogoHQPS.png">
+        </div>
+        <div class="main">
+            <h2 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        font-weight: 400; font-size: 40px;">Votes</h2>
+            <h4 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 400; font-size: 20px;">*Position title here*</h4>
+            <h4 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 400; font-size: 17px;">Vote "1" for your first/best choice, and vote "5" for your last choice.</h4>
+            <?php
+                $nameVariable;
+                echo '<form method="POST" action="/Users/michaelm/Documents/BCBC Webpage/postVNPage.html">
+                    <input type="radio" name="'.$nameVariable.'" value="1">
+                    <input type="radio" name="'.$nameVariable.'" value="2">
+                    <input type="radio" name="'.$nameVariable.'" value="3">
+                    <input type="radio" name="'.$nameVariable.'" value="4">
+                    <input type="radio" name="'.$nameVariable.'" value="5">
+                    <input type="submit" value="Submit">
+                </form>';
+            ?>
+        </div>
+        </div>
+        <div class="footer">
+            <table style="width: 100%; color: #333;">
+                <tr><th style="color: #F5F5F5; font-weight: 300;">Authors:</th><th style="color: #F5F5F5; font-weight: 300;">Contributors:</th></tr>
+                <tr>
+                    <td style="color: #F5F5F5; font-weight: 100;">Matthew Myjak</td><td style="color: #F5F5F5; font-weight: 100;">Dr. Donald Bagert</td>
+                </tr>
+                <tr>
+                    <td style="color: #F5F5F5; font-weight: 100;">Patrick Sullivan</td><td style="color: #F5F5F5; font-weight: 100;">Dr. Juan Carlos Araque</td>
+                </tr>
+                <tr>
+                    <td style="color: #F5F5F5; font-weight: 100;">Michael Meixner</td><td style="color: #F5F5F5; font-weight: 100;">Nicolaas tenBroek</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

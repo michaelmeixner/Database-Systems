@@ -1,0 +1,37 @@
+Entities:
+    an entity in a database is basically an object in object oriented programming
+    entities don't have behaviors, unlike objects which have both attributes and behaviors
+    entities only have attributes
+        attributes can be discrete or complex pieces of data
+            if they are complex, they might be their own entity, and this is a relationship
+    has-a and is-a relationships
+        is-a example: class B extends class A
+        has-a example: class A has attributes
+ER Diagram
+    entity-relationship diagram
+    used to construct the database
+    start with entities, then move on to relationships
+Example:
+    Giraffe Exhibit (GE) is our entity
+
+        public class GE() {
+            // following are attributes of the exhibit
+            girrafe[] girrafes; //amount of girrafes in exhibit
+            food
+            water
+            fence
+            pillows[] pillows;
+            liveStream
+            lights
+            sign
+            ID
+        }
+    
+    A properly diagrammed entity should have at least one attribute that uniquely identifies that entity (i.e. an ID number)
+        called a key attribute
+    Key attributes are essential to keeping the database running well
+    Entities can have more than one key attribute
+
+ORM - Object Relational Modeling:
+    basically a library that takes your objects and breaks them down into their component bits to store in entity form in a database
+    when you want an object, just ask it for certain key values and it will fetch the object

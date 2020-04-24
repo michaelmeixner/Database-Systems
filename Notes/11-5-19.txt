@@ -1,0 +1,6 @@
+5 Normal Form
+    1. no multi-valued or composite attributes
+        would cause wierd attributes to appear
+        would see things more than once
+    2. with composite key no piece of data should be dependent on part of the key
+    3. no attribute should be functionally dependent on a non-key attribute

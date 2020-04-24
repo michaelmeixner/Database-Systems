@@ -1,0 +1,10 @@
+Select
+    items of interest
+    where they are
+    conditions to be met
+
+SELECT
+concat(concat(concat(e.minit, ' '), concat(e.lname, ' ')), e.fname) AS name, e.*, p.pname, w.hours
+FROM employee e, works_on w, project p
+WHERE e.lname LIKE('____') AND e.ssn LIKE('6%') AND e.ssn = w.essn AND w.pno = p.pnumber AND p.pnumber IN(62, 92, 3)
+ORDER BY e.lname, e.fname;

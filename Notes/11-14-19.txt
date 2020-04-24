@@ -1,0 +1,10 @@
+Normal forms:
+    1. no multivalued or composite attributes
+    2. no attribute depends on part of a composite key (fix by getting rid of the composite key or assigning it to its own relation)
+    3. no attribute is functionally dependent on a non-key attribute (fix by decomposing relation)
+    most database designers ignore the following two, especially number 5
+    4. all data in a relation is actually related to each other (fix by decomposing table)
+    5. ?
+LOOK UP BOYCE-COD NORMAL FORM FOR FINAL (like #3)
+
+XSLT is XML document that tells browser how to format XML documents for displaying as XHTML
